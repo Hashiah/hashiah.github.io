@@ -1,0 +1,24 @@
+                <!-- Header -->
+                    <header id="header">
+                        <a href="{{site.baseurl}}" class="logo">Hashiah</a>
+                    </header>
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            {% assign items = site.pages|sort: 'order' %}
+                            {% for item in items %}
+                            {% if item.title %}
+                            <li{% if item.url == page.url %} class="active"{% endif %}>
+                                <a href="{{item.url}}">{{item.title}}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                        <ul class="icons">
+                            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </nav>
