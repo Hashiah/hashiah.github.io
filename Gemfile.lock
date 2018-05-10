@@ -232,7 +232,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
   jekyll-email-protect
   jekyll-twitter-plugin
 
